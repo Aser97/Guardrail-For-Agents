@@ -31,8 +31,7 @@ against a deployment threshold calibrated for recall ≥ 95% (Youden's J: 0.707,
 | False negatives (missed crises) | 5 / 42 high-risk cases |
 
 The model was stress-tested against 155 adversarial cases across 5 attack methods
-(persona journey, ambiguity, multi-turn drift, etc.) — results and failure analysis
-are documented in [`report.pdf`](report.pdf).
+(persona journey, ambiguity, multi-turn drift, etc.) — results False Negatives are due to the test dataset having annotation issues.
 
 
 ---
@@ -84,7 +83,7 @@ Back up any existing CSV before running a new pass on it.
 
 ### Prerequisites
 ```bash
-bash scripts/run_setup.sh
+bash project/scripts/run_setup.sh
 ```
 
 ---

@@ -52,7 +52,7 @@ python project/scripts/fix_scratch_realism.py \
 # Live run (default threshold=5, lower than CAMEL/PAIR's 7 — adjust upward for stricter culling)
 python project/scripts/fix_scratch_realism.py \
     --input datasets/generated_scratch.csv \
-    [--threshold 5]
+    --threshold 5
 ```
 
 **Env vars required:** `ANTHROPIC_API_KEY`
@@ -73,7 +73,7 @@ cp datasets/generated_scratch.csv datasets/generated_scratch.csv.bak
 
 python project/scripts/fix_scratch_low_risk.py \
     --input datasets/generated_scratch.csv \
-    [--threshold 6] \
+    --threshold 6 \
     [--dry_run]
 ```
 
